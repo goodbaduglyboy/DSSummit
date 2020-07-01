@@ -94,8 +94,11 @@ def Solve_8Qns():
     fit=calc_fitness(chrom)
     if fit==maxFitness:
       print('Selected Chromosome-',chrom,'\nFitness-',fit)
-      return chrom
+      # return chrom
+      print(' '.join(map(str, chrom)))
+      return (' '.join(map(str, chrom)))
       break
 
 if __name__ == "__main__":
   Solve_8Qns()
+  
