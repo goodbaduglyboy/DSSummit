@@ -81,8 +81,8 @@ def genetic_queen(pop_list):
     
   return(new_population,nofitfound)
 
-# Main Function
-if __name__ == "__main__":
+# Solution function
+def Solve_8Qns():
   
   pop_list=populate()
   nofitfound =  False
@@ -94,4 +94,8 @@ if __name__ == "__main__":
     fit=calc_fitness(chrom)
     if fit==maxFitness:
       print('Selected Chromosome-',chrom,'\nFitness-',fit)
+      return chrom
       break
+
+if __name__ == "__main__":
+  Solve_8Qns()
